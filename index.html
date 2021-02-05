@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} - {{ page.date | date: "%-d %B %Y" }}</a></h2>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} - {{ post.date | date: "%-d %B %Y" }}</a></h2>
 
       <div class="entry">
 		{{ post.excerpt | strip_html | truncatewords:75 }}

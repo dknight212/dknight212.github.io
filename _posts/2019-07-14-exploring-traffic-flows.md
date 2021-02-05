@@ -2,7 +2,7 @@
 layout: post
 title:  Exploring traffic flows in Power BI
 ---
-(this is the original text except I've removed the link to the since removed Power BI report)
+(this is the original text except I've removed the link to the Power BI report)
 
 An introduction to version 1 of the visuals pack
 
