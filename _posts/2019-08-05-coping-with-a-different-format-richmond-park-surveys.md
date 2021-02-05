@@ -290,15 +290,19 @@ This takes the time, multiples it by 24, rounds it and then divides by 24, creat
 
 What this does is to create a new column called Flow (overwriting the existing one) which contains the sum of the existing Flow column for each combination of Survey, Direction and Date time. Any columns not mentioned in either the Group by or the New column listings are automatically dropped. You could, if you wanted, go through all columns and add each in the above dialog box or you could edit the underlying M code. The M code for the Group by summary is:  
 
+{% raw %}
 ```
-= Table.Group(#"Reordered Columns1", {"Survey", "Direction", "Date time", "Date", "Time"}, {{"Flow", each List.Sum([Flow]), type number}})
+= Table.Group(#"Reordered Columns1", {"Survey", "Direction", "Date time", "Date", "Time"}, \{{"Flow", each List.Sum([Flow]), type number\}})
 ```
+{% endraw %}
 
 If you wanted to add another column, the code would be:
 
+{% raw %}
 ```
 = Table.Group(#"Reordered Columns1", {"Survey", "Direction", "Date time", "Date", "Time"}, {{"Flow", each List.Sum([Flow]), type number}, {"Cycles", each List.Sum([Cycles]), type number}})
 ```  
+{% endraw %}
 
 so each extra column takes the form:
 ```
