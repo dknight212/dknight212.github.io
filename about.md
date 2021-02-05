@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
+Providing information on getting traffic survey data from local authorities, on wrangling data with R and Power Query, and on presenting data with R and Power BI
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[david@dwknight.co.uk](mailto:david@dwknight.co.uk)
