@@ -2,7 +2,6 @@
 layout: post
 title:  Exploring traffic flows in Power BI
 ---
-# Exploring traffic flows in Power BI
 (this is the original text except I've removed the link to the since removed Power BI report)
 
 An introduction to version 1 of the visuals pack
@@ -42,5 +41,3 @@ I will explain a lot more about these charts and data over the coming weeks. If 
   
 
 Edit: I've added a simple histogram (based on the published 5mph bins) and a simple source table.
-
-Originally written: 14 July 2019
