@@ -5,7 +5,7 @@ title:  Reading traffic data into R
  
 So you've got some traffic data, how do we get the data into a dataset so we can analyse it? Let's use the R language to explore the data.
 
-The presummarised datasets outlined in [a previous post](https://www.trafficflows.org/post/a-look-at-some-traffic-data) are not really in a form for further analysis. Sure, you can read off some basic statistics from the Excel workbooks, particularly if you look at the virtual worksheets. But you can't easily compare across days or produce your own summary statistics. This post will give a quick run through of how to read the traffic data into R and show you how to create some graphs, before giving an example of how you can create sophisticated output in pdf format.
+The presummarised datasets outlined in [a previous post](/a-look-at-some-traffic-data) are not really in a form for further analysis. Sure, you can read off some basic statistics from the Excel workbooks, particularly if you look at the virtual worksheets. But you can't easily compare across days or produce your own summary statistics. This post will give a quick run through of how to read the traffic data into R and show you how to create some graphs, before giving an example of how you can create sophisticated output in pdf format.
 
 ## What is R?
 
