@@ -25,18 +25,18 @@ Each sheet with data has several rows before the actual data and the headings ar
 
 How do we read data from Excel into R? R has many specialised add-ins that extend the language, you need to manually add these packages if you want to use the extenions. I've used the readxl package here to read the Excel data but there are other packages available, notably xlsx. If you haven't installed the package before then install it with:
 
-```
+```r
 install.packages("readxl")
 ```
 
 Now let's load it:
-```
+```r
 library("readxl")
 ```
   
 Remember the "useless" beginning rows of each sheet? We need to ignore those when reading the data. We also want only to read the data for each hour and not any extra rows at the end. The read\_excel function uses the skip parameter to determine how many rows to ignore at the beginning of a sheet, and the n\_max parameter for how many rows to read. We want to ignore the first 14 rows and read in the next 24 (one for each hour). You also need to specify which sheet to read - let's get the 1Feb19 sheet:
 
-```
+```r
 excel_data <-read_excel("TRANMEREROAD20MPHNORTHOFWAYNFLETESTREETNORTHBOUNDxlsx V1.xlsx", sheet="1Feb19", skip=14, n_max=24, col_names=FALSE)
 ```
   
@@ -44,14 +44,14 @@ Read\_excel will try to read the column names from the workbook if you use the c
 
 Let's try and make the code as flexible as possible by setting a variable to count the number of rows to ignore and one to count how many rows to read in after that. We could of course be more sophisticated and look for particular rows such as ones that look like times in the first column. That way, the code could cope with slightly different layouts. However, let's take the easy route:
 
-```
+```r
 Nskip <- 14
 Nrows <- 24
 ```  
   
 Now, each day has a separate sheet. For now, let's just read in one day at a time. Each direction was in a separate workbook, again, let's read those into separate variables and keep flexibility and neatness by storing the workbook names in variables.
 
-```
+```r
 date <- "1Feb19"
 wb1 <- "TRANMEREROAD20MPHNORTHOFWAYNFLETESTREETNORTHBOUNDxlsx V1.xlsx"
 wb2 <- "TRANMEREROAD20MPHNORTHOFWAYNFLETESTREETSOUTHBOUNDxlsx V1.xlsx"
@@ -62,7 +62,7 @@ excel_data_2 <- read_excel(wb2, sheet=date, skip=Nskip, n_max=Nrows, col_names=F
   
 Setting column names is a laborious process if we had to do this each time - see later on for a function to do this.
 
-```
+```r
 names(excel_data_1)[1:28] <- c("Time","Flow","00-15","15-30","30-45","45-60","Cycles","MotorCycles","CarVan", "CarVanTowing","VanLorry2Axle", "Rigid3Axle","Rigid4Axle","Artic3Axle","Artic4Axle","Artic5Axle","Artic6Axle","BDouble","DoubleRoadTrain","mph10","mph15","mph20","mph25","mph30","mph35","mph40","mph45","mph50")
 
 names(excel_data_2)[1:28] <- c("Time","Flow","00-15","15-30","30-45","45-60","Cycles","MotorCycles","CarVan", "CarVanTowing","VanLorry2Axle", "Rigid3Axle","Rigid4Axle","Artic3Axle","Artic4Axle","Artic5Axle","Artic6Axle","BDouble","DoubleRoadTrain","mph10","mph15","mph20","mph25","mph30","mph35","mph40","mph45","mph50")
@@ -72,7 +72,7 @@ Copy and paste helps reduce the overhead of tedious code (I edit my code in Note
 
 ## What do the data look like now?
 
-```
+```r
 excel_data_1
 # A tibble: 24 x 67
    Time  HourlyTotal  ...3  ...4  ...5  ...6 Cycles MotorCycles CarVan CarVanTowing VanLorry2Axle
@@ -95,7 +95,7 @@ We can now use these columns directly to do some basic exploration.
 Some quick graphs
 
   
-```
+```r
 barplot(excel_data_1$HourlyTotal, names.arg=excel_data_1$Time, main=paste("Northbound hourly flow", date), ylim=c(0,200))
 ```
 
@@ -103,7 +103,7 @@ barplot(excel_data_1$HourlyTotal, names.arg=excel_data_1$Time, main=paste("North
 
 Let's compare the total northerly and southerly flows, and show the figures for cycling separately:
 
-```
+```r
 par(mfrow=c(2,2))
 barplot(excel_data_1$Flow, names.arg=excel_data_1$Time, main=paste("Northbound hourly flow", date), ylim=c(0,200))
 barplot(excel_data_2$Flow, names.arg=excel_data_2$Time,main=paste("Southbound hourly flow", date), ylim=c(0,200))
@@ -118,7 +118,7 @@ barplot(excel_data_2$Cycles, names.arg=excel_data_2$Time, main=paste("Southbound
 
 Let's make the code a little more modular by creating a function to read the data and set the column names:
 
-```
+```r
 get_data <- function(file, sht ,ignore, rows) {
 
   # read in the data from Excel
@@ -143,18 +143,18 @@ return (new_tibble)
 
 Note this also creates a new Lorries column plus columns for the percentage of cars and vans, and of lorries. You also need to have loaded the Tidyverse package for this to work:
 
-```
+```r
  library("tidyverse")
 ```
   
 We call the function like this:
 
-```
+```r
 new_excel_data_1 <- get_data(workbook1, dt, sk, rw) 
 ```
 
 Let's see what the data look like now:
-```
+```r
 new_excel_data_1
 # A tibble: 24 x 70
    Time   Flow `00-15` `15-30` `30-45` `45-60` Cycles MotorCycles CarVan CarVanTowing VanLorry2Axle
@@ -177,7 +177,7 @@ That's better!
 
 What about the quarter hour data, can we break that out and make it usable? Yes we can! We want to reshape the data so that the quarter hour data is attached to each hour, something like this:
 
-```
+```r
 0000 1
 0015 0
 0030 2
@@ -189,7 +189,7 @@ etc
 
 The first thing to do is to select just the quarter hour columns as all the other columns are for each hour. Using the Tidyverse package we can use select and gather to do this. Let's just keep the quarter hour columns:
 
-```
+```r
 > ed_1_15 <- select(excel_data_1, Time, '00-15','15-30','30-45','45-60')
 
 > ed_1_15
@@ -210,7 +210,7 @@ The first thing to do is to select just the quarter hour columns as all the othe
 
 We now want to "gather" the data so that each data column in fact becomes a row in its own right. In Power BI (as a later post will illustrate) this is called "unpivoting".
 
-```
+```r
 ed_1_15 <- gather(ed_1_15, "QTime", "Flow", -Time)
 ed_1_15
 # A tibble: 96 x 3
@@ -231,7 +231,7 @@ ed_1_15
 
 The QTime column is not yet in the proper format for time so we need to create a new column merging the hours of the main Time column with the quarter hour column.
 
-```
+```r
 ed_1_15 <- ed_1_15 %>% mutate(NewTime=paste(substr(Time,1,2),substr(QTime,1,2),sep=""))
  
 Let's look at the end of the data this time to make it more obvious what's happening:
@@ -252,7 +252,7 @@ We used the first two characters of the Time column (eg 18 for 1800) and the fir
 
 The Time and QTime columns are now no longer needed so let's drop them, rename the NewTime column and also sort by it:
 
-```
+```r
 ed_1_15 <- select(ed_1_15, "Time" = NewTime, "Flow")
 ed_1_15 <- arrange(ed_1_15, Time)
 
@@ -273,7 +273,7 @@ ed_1_15
 ```
 
 Written as a function, this becomes:
-```
+```r
 convert_15min <- function(tibble1) {
    new_tibble <- select(tibble1, Time, '00-15','15-30','30-45','45-60')
    new_tibble <- gather(new_tibble, "QTime", "Flow", -Time)
@@ -287,7 +287,7 @@ convert_15min <- function(tibble1) {
 
 and we'd call this function like this:
 
-```
+```r
 new_ed_1 <- convert_15min(excel_data_1)
 ```
  
@@ -295,7 +295,7 @@ new_ed_1 <- convert_15min(excel_data_1)
 
 Let's create some more modular functions to make plotting easier, using the ggplot2 library for quality output and the gridExtra library to set out the plots neatly:
 
-```
+```r
 > do_plots1 <-function(label1, label2, tibble1, tibble2) {
    
    p1 <- ggplot(tibble1, aes(y=Flow, x=Time)) + ggtitle(paste(label1, "all vehicles (15 min)")) + scale_x_discrete(breaks=c("0000","0200","0400","0600","0800","1000","1200","1400","1600","1800","2000","2200","2400")) + ylim(0,flow_y_max) + geom_bar(stat="identity")
@@ -336,7 +336,7 @@ ggplot2 is a very complicated package with its own "grammar" but offers ways of 
 
 Given the above functions we can now use them to read in our data and create some decent graphics, all in a way that can be easily reused for other datasets:
 
-```
+```r
 # let's set some limits for the axes
 flow_y_max <- 50 # max y limit
 cycle_y_max <- 15 # max y limit
@@ -352,7 +352,7 @@ do_plots1("Northbound", "Southbound", final_data1_15, final_data2_15)
 
 ![Fig4](../assets/2019-07-22-fig4.png)
 
-```
+```r
 do_plots2("Northbound", "Southbound", final_data1, final_data2)
 ```
 
