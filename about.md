@@ -5,6 +5,3 @@ permalink: /about/
 ---
 
 Providing information on getting traffic survey data from local authorities, on wrangling data with R and Power Query, and on presenting data with R and Power BI
-### Contact me
-
-[david@dwknight.co.uk](mailto:david@dwknight.co.uk)
