@@ -3,7 +3,7 @@ layout: post
 title:  Reading traffic data into Power BI or Excel - part 2
 ---
  
-Assuming you've downloaded Power BI ([see previous post](/reading-traffic-data-into-power-bi-or-excel-part-1)), let's use it to read in some data.
+Assuming you've downloaded Power BI ([see previous post](/reading-traffic-data-into-power-bi-or-excel-part1)), let's use it to read in some data.
 
 First, let's think about what sources we have and what we might need. Each traffic survey is actually contained within two workbooks (one for each direction) each with separate sheets for each day of the survey. What we want to do is to read those sheets in and combine them into a single dataset for each survey. In fact, why not go one better and read all the surveys into a single dataset? We can then use Power BI to filter the dataset by survey, day or whatever and we only have one dataset to worry about. When we add a new survey to our data source, it just gets read into the portmanteau set. In theory, we can have thousands of surveys (if only!) to play with and Power BI would work exactly the same as if we only had two.
 
