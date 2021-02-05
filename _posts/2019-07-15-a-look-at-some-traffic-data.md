@@ -3,7 +3,7 @@ layout: post
 title:  A look at some traffic data!
 ---
  
-A quick look at what you might get back from a local authority. In [a previous post](2019-07-15-making-foi-requests), I looked at how you might request data from a local authority. Now, what do you get?
+A quick look at what you might get back from a local authority. In [a previous post](\making-foi-requests), I looked at how you might request data from a local authority. Now, what do you get?
 
 There's a big caveat on this post - the data received so far from the London Borough of Wandsworth is not strictly raw data. Don't get me wrong, it's an enormous advance on the few data that have been exposed in the past, such as just the overall mean speed. But, in an ideal world, we really would get the really raw data, that is, each record in the dataset would relate to a single vehicle passing the traffic counter at a given time. From that sort of data, you can summarise as you wish. In reality, you may well get a pre-summarised dataset, as I have here. With this kind of dataset, each record is just a total of vehicles within a given time-frame, for example, how many vehicles of each type passed the counter between 0900 and 1000. I guess that in order to create the later dataset, the analyst must do some smoothing and exclusion of outliers. But it would be better to do that yourself.
 
