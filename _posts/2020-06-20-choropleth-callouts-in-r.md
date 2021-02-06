@@ -3,7 +3,7 @@ layout: post
 title:  Choropleth callouts in R
 ---
  
-Addendum to my [last post on ONS data](/uk-choropleths-in-r-merging-with-ons-data).
+Addendum to my [last post on ONS data](/uk-choropleth-maps-in-r-merging-with-ons-data).
 
 The problem with some maps is that it's hard to see some areas in a larger map. Ideally we want to see both the big picture but also zoom in on a smaller area either because we're specifically interested in it or because we couldn't otherwise see it. This example shows how we can do a callout plot of the London area but the principle works just as well for any other area, you just need to be able to separately identify the area in question so we can pull out the relevant rows.
 
