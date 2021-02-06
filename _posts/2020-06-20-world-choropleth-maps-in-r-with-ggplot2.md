@@ -3,7 +3,7 @@ layout: post
 title:  World choropleth maps in r with ggplot2
 ---
  
-An appendum to my [previous post](creating-choropleth-maps-in-r-with-ggplot2) in which I discussed UK choropleths in R.
+An appendum to my [previous post](/creating-choropleth-maps-in-r-with-ggplot2) in which I discussed UK choropleths in R.
 
 Extending the methodology for UK maps to world maps is easy, There are world maps inbuilt in R but let's go get them from scratch. [Eurostat](https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/countries) has a collection of country maps. If you download and extract the 2016 country ZIP file you'll find that it contains different resolutions in separate folders. Here I load the 60 metre resolution file in the same way as I did for the UK maps:
 
