@@ -55,6 +55,9 @@ A quick run-through of what you need to do to set-up:
 	- renamed the `highlight` block to `pre-highlight` to get rid of annoying double-boxes around code (as explained at [Stackoverflow](https://stackoverflow.com/questions/55308142/why-do-i-get-a-double-frame-around-markdown-code-block-on-jekyll-site))
 - customise the index.html file
 	- I changed the post list to include the date and to truncate the post excerpt like so:
+
+
+{% raw %}
 ```
 ---
 layout: default
@@ -75,6 +78,8 @@ layout: default
   {% endfor %}
 </div>
 ```
+{% endraw %}
+
 
 - add posts to the \_posts folder and images to the assets folder
 - commit and push the changes from your system
