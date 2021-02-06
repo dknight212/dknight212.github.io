@@ -26,18 +26,18 @@ It's useful but not essential to have your own domain name.
 
 There are various websites that take you through the process in more depth, in particular:
 
-- [Getting started with GitHub Pages - GitHub Docs](https://docs.github.com/en/github/working-with-github-pages/getting-started-with-github-pages)
+- [Getting started with GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/getting-started-with-github-pages)
 
 The following sites are limited on Medium but if you don't have a Medium account then you can save them to Pocket:
 
-- [Building a Beautiful Static Webpage Using GitHub | by Cody Glickman | Towards Data Science](https://towardsdatascience.com/building-a-beautiful-static-webpage-using-github-f0f92c6e1f02)
-- [Launch a Website for Free in 5 simple steps with GitHub Pages | by Emile Gill | Towards Data Science](https://towardsdatascience.com/launch-a-website-for-free-in-5-simple-steps-with-github-pages-e9680bcd94aa)
+- [Building a Beautiful Static Webpage Using GitHub](https://towardsdatascience.com/building-a-beautiful-static-webpage-using-github-f0f92c6e1f02)
+- [Launch a Website for Free in 5 simple steps with GitHub Pages](https://towardsdatascience.com/launch-a-website-for-free-in-5-simple-steps-with-github-pages-e9680bcd94aa)
 
 You can read more about Git and Github at
 
-- [Getting started with GitHub - GitHub Docs](https://docs.github.com/en/github/getting-started-with-github)
-- [What Exactly Is GitHub Anyway? | TechCrunch](https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/)
-- [Getting started with Git and GitHub: the complete beginner’s guide | by Anne Bonner | Towards Data Science](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+- [Getting started with GitHub](https://docs.github.com/en/github/getting-started-with-github)
+- [What Exactly Is GitHub Anyway?](https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/)
+- [Getting started with Git and GitHub the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 
 A quick run-through of what you need to do to set-up:
 
