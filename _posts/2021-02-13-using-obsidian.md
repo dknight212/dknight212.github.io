@@ -70,9 +70,9 @@ Todo items look like this:
 and they can be ticked off in preview mode.
 
 ```
-A markdown link [looks like this](https:/www.trafficflows.org)
+A markdown link [looks like this](https://www.trafficflows.org)
 ```
-A markdown link [looks like this](https:/www.trafficflows.org)
+A markdown link [looks like this](https://www.trafficflows.org)
 
 But for links inside your Obsidian vault, you'll be better off using Wiki-type links:
 ```
