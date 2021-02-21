@@ -3,10 +3,10 @@ layout: post
 title:  Porting from Wix to Jekyll - how-to
 ---
 
-I've moved my blog posts from a paid Wix site to Github, using Github Pages and the [Jekyll](https://jekyllrb.com/) website/blog engine. This enables me to write posts in [Markdown](https://www.ultraedit.com/company/blog/community/what-is-markdown-why-use-it.html) and integrate with my [Obsidian](https://obsidian.md/) vault (I'll write about that another day).
+I've moved my blog posts from a paid Wix site to GitHub, using GitHub Pages and the [Jekyll](https://jekyllrb.com/) website/blog engine. This enables me to write posts in [Markdown](https://www.ultraedit.com/company/blog/community/what-is-markdown-why-use-it.html) and integrate with my [Obsidian](https://obsidian.md/) vault (I'll write about that another day).
 
 There were several reasons why I moved this blog:
-  - cost - why pay for Wix when Github Pages are free?
+  - cost - why pay for Wix when GitHub Pages are free?
   - annoyance with Wix 1 - I don't like organisations that repeatedly email with (the same) "time-limited" offers
   - annoyance with Wix 2 - it was really overkill for what I wanted
   - annoyance with Wix 3 - I didn't want to get locked into a proprietary system
@@ -18,33 +18,33 @@ There were several reasons why I moved this blog:
   There really wasn't much challenge involved in this change, partly because I wanted the blog to be very straightforward. I'm using the default theme and no tags but may reconsider this approach.
   
 ## Basic set up
-In order to do this you need some basic knowledge of Git/Github, a very small amount of HTML and Markdown (but this is really very simple).
+In order to do this you need some basic knowledge of Git/GitHub, a very small amount of HTML and Markdown (but this is really very simple).
 
-I find it easiest to use the Github desktop application in Windows but cloning and pushing files to the site can also be done at the command line.
+I find it easiest to use the GitHub desktop application in Windows but cloning and pushing files to the site can also be done at the command line.
 
 It's useful but not essential to have your own domain name.
 
 There are various websites that take you through the process in more depth, in particular:
 
-- [Getting started with GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/getting-started-with-github-pages)
+- [Getting started with GitHub Pages](https://docs.GitHub.com/en/GitHub/working-with-GitHub-pages/getting-started-with-GitHub-pages)
 
 The following sites are limited on Medium but if you don't have a Medium account then you can save them to Pocket:
 
-- [Building a Beautiful Static Webpage Using GitHub](https://towardsdatascience.com/building-a-beautiful-static-webpage-using-github-f0f92c6e1f02)
-- [Launch a Website for Free in 5 simple steps with GitHub Pages](https://towardsdatascience.com/launch-a-website-for-free-in-5-simple-steps-with-github-pages-e9680bcd94aa)
+- [Building a Beautiful Static Webpage Using GitHub](https://towardsdatascience.com/building-a-beautiful-static-webpage-using-GitHub-f0f92c6e1f02)
+- [Launch a Website for Free in 5 simple steps with GitHub Pages](https://towardsdatascience.com/launch-a-website-for-free-in-5-simple-steps-with-GitHub-pages-e9680bcd94aa)
 
-You can read more about Git and Github at
+You can read more about Git and GitHub at
 
-- [Getting started with GitHub](https://docs.github.com/en/github/getting-started-with-github)
-- [What Exactly Is GitHub Anyway?](https://techcrunch.com/2012/07/14/what-exactly-is-github-anyway/)
-- [Getting started with Git and GitHub the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+- [Getting started with GitHub](https://docs.GitHub.com/en/GitHub/getting-started-with-GitHub)
+- [What Exactly Is GitHub Anyway?](https://techcrunch.com/2012/07/14/what-exactly-is-GitHub-anyway/)
+- [Getting started with Git and GitHub the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-GitHub-6fcd0f2d4ac6)
 
 A quick run-through of what you need to do to set-up:
 
-- create an account at Github if you don't already have one
+- create an account at GitHub if you don't already have one
 - fork the Jekyll Now repository (link)
-- rename the cloned repository to *yourusername*.github.io
-- using the Github desktop application, clone the repository to your local system
+- rename the cloned repository to *yourusername*.GitHub.io
+- using the GitHub desktop application, clone the repository to your local system
 - add a profile picture to the images folder
 - create a new assets folder
 - customise the \_config.yml file
@@ -93,16 +93,16 @@ By far the most time I spent on this whole process was copying the posts and ima
 
 - I did not use a good file naming system for the screenshots and I found it tedious to match up the actual files with the posts. I've improved this by renaming image files to include the date of the related post.
 - copying the text from Wix introduced backslash quoting of code and file references, particularly to underscores. These were hard to track down.
-- some of the Power BI M code included double curly braces. Unfortunately these are used by the underlying [Liquid](https://jekyllrb.com/docs/liquid/) templating language. I had to surround such code with [raw](https://shopify.github.io/liquid/tags/raw/) tags.
+- some of the Power BI M code included double curly braces. Unfortunately these are used by the underlying [Liquid](https://jekyllrb.com/docs/liquid/) templating language. I had to surround such code with [raw](https://shopify.GitHub.io/liquid/tags/raw/) tags.
 
 I used Notepad++ at times to reformat codes since its search and replace features are so powerful. Yes, I used to use Vi(m).
 
 ## My new process
 Now that Obsidian is now very much part of my daily routine, being in it for much of the day, and being able to see my notes from other sources and my page of ideas, makes the whole writing experience so much better. I found it distracting moving from one tool to another.
 
-I can now draft posts in Obsidian in a separate drafts folder, keeping track of ideas in another file. When they're cooked, I can transfer posts to the final folder. In the meantime, everything is separately backed up (also to Github).
+I can now draft posts in Obsidian in a separate drafts folder, keeping track of ideas in another file. When they're cooked, I can transfer posts to the final folder. In the meantime, everything is separately backed up (also to GitHub).
 
-Links to images are fine since the draft and final blog post folders are in the same path relative to the assets folder as they are on Github. So the markdown:
+Links to images are fine since the draft and final blog post folders are in the same path relative to the assets folder as they are on GitHub. So the markdown:
 
 ```
 ![Figure 1](../assets/yyyy-mm-dd-fig1.png)
@@ -114,4 +114,4 @@ Links from post to post don't work but that's easily checkable.
 
 I use a short [Powershell](https://docs.microsoft.com/en-us/powershell/scripting/overview) script with [RoboCopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy) to copy posts from the final posts and assets folders in my Obsidian vault to the cloned Jekyll Now repository in a separate folder structure. Together with my latest toy, [Keypirinha](https://keypirinha.com/), I can copy the files in a few keystrokes. I'm sure if I were still using Linux, I'd have similar bash scripts for this (and committing/pushing changes).
 
-I can then use the Github desktop application to commit and push the changes. After a minute or so the changes have been processed and are live on the website.
+I can then use the GitHub desktop application to commit and push the changes. After a minute or so the changes have been processed and are live on the website.GitHub

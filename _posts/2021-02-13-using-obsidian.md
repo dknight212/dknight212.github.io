@@ -87,7 +87,7 @@ There's a lot of excitement about changing the Obsidian editor to be more like [
 Because Markdown is a plain-text format, you can use any method to edit the files *en masse* including scripting languages like Perl or Python or external text editors. But some of the new plugins, like Tag Wrangler, reduce the need to do this in any case.
 
 ## Mobile application
-An Obsidian mobile application is under development and I'm really interested in what they come up with. In the absence of an official application, I'm using [Gitjournal](https://gitjournal.io/) on Android - this will connect with Github to get at my backup, permit me to edit files, and then commit and push the changes back to Github. Next time I'm in the desktop application, I can just pull the changes back down. All very nice, and because Git changes are fully logged, I have an extremely thorough method of tracing changes.
+An Obsidian mobile application is under development and I'm really interested in what they come up with. In the absence of an official application, I'm using [Gitjournal](https://gitjournal.io/) on Android - this will connect with GitHub to get at my backup, permit me to edit files, and then commit and push the changes back to GitHub. Next time I'm in the desktop application, I can just pull the changes back down. All very nice, and because Git changes are fully logged, I have an extremely thorough method of tracing changes.
 
 ## Tags, links, folders
 Your vault is your vault so you can do what you want with it. When starting out though, it's helpful to have a starting position. The forum (and elsewhere on the Internet) has lots of ideas on how best to structure your work. For what it's worth, this is what I do.
@@ -127,11 +127,11 @@ Your vault is your vault so you can do what you want with it. When starting out 
 Remember though, it's easy to change to another way of working. If you wanted to use tags to denote the subject matter then that's up to you. The Zettelkasten method might lead you to a much flatter folder structure.
 
 ## Plugins
-As I mentioned earlier, the plugin eco-system is rapidly developing. It's easy to browse and install these from within Obsidian and you can go to Github to see more information about each one, including tracking bugs and development.
+As I mentioned earlier, the plugin eco-system is rapidly developing. It's easy to browse and install these from within Obsidian and you can go to GitHub to see more information about each one, including tracking bugs and development.
 
 A few of my favourites:
 
-- **Obsidian Git** - provides a nice easy way of pushing and pulling changes to Github without using the command line or Github desktop
+- **Obsidian Git** - provides a nice easy way of pushing and pulling changes to GitHub without using the command line or GitHub desktop
 - **Advanced Tables** - Markdown tables can be a little tricky but this makes editing them very easy
 - **Periodic Notes/Calendar** - these two provide improved functionality for daily, weekly or monthly journalling
 - **Sliding Panes ** - a bit Marmite this one, sometimes I like it, sometimes I feel it doesn't work as I expect, but when it does work it makes the interface a bit swish
