@@ -8,4 +8,4 @@ Providing information on getting traffic survey data from local authorities, on 
 
 My traffic visuals are at [trafficflows.shinyapps.io/Traffic](https://trafficflows.shinyapps.io/Traffic/)
 
-Me at <a rel="me" href="https://mstdn.social/@davidknight">Mastodon</a>
+Me at <a rel="me" href="https://bsky.app/profile/dwknight.co.uk">BlueSky</a>
