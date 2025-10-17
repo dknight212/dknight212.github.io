@@ -67,7 +67,7 @@ Note that fill here refers to the internal colour of each area (this is importan
 
 The plot should look like this:
 
-![](../assets/2020-06-12-fig1.png)
+![](2020-06-12-fig1.png)
 
 ## Data files
 
@@ -131,7 +131,7 @@ Fill has been moved in the aesthetics definition so that it varies with the valu
 
 This gives us:
 
-![](../assets/2020-06-12-fig2.png)
+![](2020-06-12-fig2.png)
 
 You can plot a limited area either by only including data values for those and using the alternative left join above, or by limiting x and y (ie the latitude and longitude) with xlim and ylim respectively. You may wish to remove the theme_void() while doing this so that you have a scale to work from. Limiting x and y in this way also enables you to suppress areas which may be part of an entity eg the Scottish Islands.
 
@@ -153,7 +153,7 @@ df <- left_join(mapdata, mydata, by="id")
   
 We get:
 
-![](../assets/2020-06-12-fig3.png)
+![](2020-06-12-fig3.png)
 
 With the second:
 
@@ -163,7 +163,7 @@ df <- left_join(mydata, mapdata, by="id")
   
 We get:
 
-![](../assets/2020-06-12-fig4.png)
+![](2020-06-12-fig4.png)
 
 ## Real data
 
@@ -205,7 +205,7 @@ df <- left_join(mapdata, mydata2, by=c("id" = "entity"))
   
 Plotted using the same code as above gives:  
 
-![](../assets/2020-06-12-fig5.png)
+![](2020-06-12-fig5.png)
 
 You may need to build up a library of lookup tables if data sources use entity IDs different from the shape files.
 
@@ -226,37 +226,37 @@ The map title was set to sourcemap in the plot definition.
 
 Source: NUTS_Level_1_January_2018_Boundaries-shp
 
-![](../assets/2020-06-12-fig6.png)
+![](2020-06-12-fig6.png)
 
 ## NUTS2
 
 Source: NUTS_Level_2_January_2018_Boundaries-shp
 
-![](../assets/2020-06-12-fig7.png)
+![](2020-06-12-fig7.png)
 
 ## NUTS3
 
 Source: NUTS_Level_3_January_2018_Boundaries-shp
 
-![](../assets/2020-06-12-fig8.png)
+![](2020-06-12-fig8.png)
 
 ## UK LA districts
 
 Source: Local_Authority_Districts_December_2019_Boundaries_UK_BUC-shp
 
-![](../assets/2020-06-12-fig9.png)  
+![](2020-06-12-fig9.png)  
 
 ## UK Counties and Unitary Authorities
 
 Source: Counties_and_Unitary_Authorities_December_2019_Boundaries_UK_BUC-shp
 
-![](../assets/2020-06-12-fig10.png)
+![](2020-06-12-fig10.png)
 
 ## UK countries
 
 Source: Countries_December_2019_Boundaries_UK_BUC-shp
 
-![](../assets/2020-06-12-fig11.png)
+![](2020-06-12-fig11.png)
 
 ## UK wards
 
@@ -266,4 +266,4 @@ Note that this is a large file and has 20m resolution
 
 The polygon geom definition for this is geom_polygon() - ie no boundary shown. Otherwise the boundaries overlap the area colour and large areas appear black.
 
-![](../assets/2020-06-12-fig12.png)
+![](2020-06-12-fig12.png)

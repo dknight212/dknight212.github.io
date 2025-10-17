@@ -16,13 +16,13 @@ You need the Power BI desktop application to create Power BI reports, which are 
 Power BI has two main components - the query engine and the visualisation engine. The query engine is also available in Excel as Power Query (within the Data tab of the ribbon). Within either application, you write queries that connect to data sources, manipulate them in various ways, merge them into tables and generally prepare them for visualisations. Queries written in Power BI can be copied to Power Query in Excel and vice versa. Underlying Power Query is the language M. It's not necessary to understand M to write queries but it does help to have at least an elementary understanding so that you can make minor changes.
 
 The Query Editor in Power BI
-![The Query Editor window in Power BI](../assets/2019-07-24-fig1.png)
+![The Query Editor window in Power BI](2019-07-24-fig1.png)
 
 The visualisation window in Power BI
-![The visualisation window in Power BI](../assets/2019-07-24-fig2.png)
+![The visualisation window in Power BI](2019-07-24-fig2.png)
 
 The Power Query editor in Excel
-![The Power Query editor in Excel](../assets/2019-07-24-fig3.png)
+![The Power Query editor in Excel](2019-07-24-fig3.png)
 
 
 As well as the obvious visualisation element of the second part of Power BI, within it you can also set up relationships between the different tables and create new columns and measures. A column is a row specific calculation so that each record in a table has a value. A measure only has values within the context of a specific visualisation, for example, the percentage of a value within the selected records. In practice, measures can get extremely complex.

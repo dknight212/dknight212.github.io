@@ -9,9 +9,9 @@ The presummarised datasets outlined in [a previous post](/a-look-at-some-traffic
 
 ## What is R?
 
-R is a computer language which has many benefits for reading, manipulating, analysing and displaying data. You can read more about R at https://www.r-project.org/about.html. You can install R for free on most operating systems; I run it on both Linux and Windows. The RStudio IDE makes a few things easier but it is not necessary to run any of these examples but you may need to install some packages to do more sophisticated things with R. I ran the examples some below in RStudio with R v3.6.0 and have identified which packages you need to install.
+R is a computer language which has many benefits for reading, manipulating, analysing and displaying data. You can read more about R at [R: What is R?](https://www.r-project.org/about.html). You can install R for free on most operating systems; I run it on both Linux and Windows. The RStudio IDE makes a few things easier but it is not necessary to run any of these examples but you may need to install some packages to do more sophisticated things with R. I ran the examples some below in RStudio with R v3.6.0 and have identified which packages you need to install.
 
-This is not an R tutorial, a very basic one is available at https://www.statmethods.net/r-tutorial/index.html but there is a wealth of resources out there.
+This is not an R tutorial, a very basic one is available at [About Quick-R](https://www.datacamp.com/doc/r/category/r-documentation) but there is a wealth of resources out there.
 
 ## Reshaping the data
 
@@ -19,7 +19,7 @@ What have we got and how do we want it? Let's start with thinking about how the 
 
 Let's look again at the Excel workbook.
 
-![Fig1](../assets/2019-07-15-fig1.png)
+![Fig1](2019-07-15-fig1.png)
 
 Each sheet with data has several rows before the actual data and the headings are over several lines. We would like the data in a tidy form with no blank rows and each column being named appropriately.
 
@@ -99,7 +99,7 @@ Some quick graphs
 barplot(excel_data_1$HourlyTotal, names.arg=excel_data_1$Time, main=paste("Northbound hourly flow", date), ylim=c(0,200))
 ```
 
-![Fig2](../assets/2019-07-22-fig2.png)
+![Fig2](2019-07-22-fig2.png)
 
 Let's compare the total northerly and southerly flows, and show the figures for cycling separately:
 
@@ -112,7 +112,7 @@ barplot(excel_data_1$Cycles, names.arg=excel_data_1$Time, main=paste("Northbound
 barplot(excel_data_2$Cycles, names.arg=excel_data_2$Time, main=paste("Southbound hourly cycles", date), ylim=c(0,50))
 ```
   
-![Fig3](../assets/2019-07-22-fig3.png)
+![Fig3](2019-07-22-fig3.png)
 
 ## Modularise the code
 
@@ -350,13 +350,13 @@ final_data2_15 <- convert_15min(final_data2)
 do_plots1("Northbound", "Southbound", final_data1_15, final_data2_15)
 ```
 
-![Fig4](../assets/2019-07-22-fig4.png)
+![Fig4](2019-07-22-fig4.png)
 
 ```r
 do_plots2("Northbound", "Southbound", final_data1, final_data2)
 ```
 
-![Fig5](../assets/2019-07-22-fig5.png)
+![Fig5](2019-07-22-fig5.png)
 
 ## Summary
 

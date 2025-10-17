@@ -88,7 +88,7 @@ That way means you don't have to specify the other end point.
 
 Anyway, the final map is shown below:
 
-![](../assets/2020-06-20c-fig1.png)
+![](2020-06-20c-fig1.png)
 
 Again, you can prettify this by adding titles and a line from the callout to the London area. Changing the plot code to the following makes it look nicer:
 
@@ -128,7 +128,7 @@ Again, you can prettify this by adding titles and a line from the callout to the
 
 Notes on the above:
 
-1.  I've used CTRL SHIFT A in RStudio to put in lots of space to make the code easier to read.    
+1.  I've used Ctrl Shift A in RStudio to put in lots of space to make the code easier to read.    
 2.  I've used the name parameter in scale_fill_gradient to add a legend title (there are lots of different ways of adding a legend title)
 3.  The title has the newline character (n) inserted to break it up
 4.  I've added a text annotation for the callout box
@@ -139,4 +139,4 @@ Notes on the above:
 
 So the final product is:
 
-![](../assets/2020-06-20c-fig2.png)
+![](2020-06-20c-fig2.png)

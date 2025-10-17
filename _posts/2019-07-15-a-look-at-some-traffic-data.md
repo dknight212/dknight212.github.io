@@ -9,7 +9,7 @@ There's a big caveat on this post - the data received so far from the London Bor
 
 With the caveat out of the way, this is a quick look at a dataset received from Wandsworth ([FOI request source](https://www.whatdotheyknow.com/request/magdalen_road_earlsfield_traffic#incoming-1397375)).
 
-![Figure 1](../assets/2019-07-15-fig1.png)
+![Figure 1](2019-07-15-fig1.png)
 
 Here, you can see the hourly time-slots in the first column and then different columns for each vehicle type. The 15 minute "bin drop" enable you to break out the hourly slots into 15 minute slots - for the 0000 row you get the data for 0000-0015 by looking at the 00-15 column and so on. In another post, I'll show how to automate the process of analysing these types of files, including how to put the data in a more useful format.
 
@@ -17,17 +17,17 @@ There are a lot of columns in the dataset, to the right of the vehicle counts ar
 
 More interestingly, further to the right of the vehicle counts are counts of vehicles at different speeds.
 
-![Figure 2](../assets/2019-07-15-fig2.png)
+![Figure 2](2019-07-15-fig2.png)
 
 Because this is presummarised data, you're stuck with the bins the analyst has chosen, so no fine-tuned histograms can be made (sad face). Again, to the right of these columns are the equivalent percentages which can be ignored.
 
 Finally, to the right of the speed data are columns which provide the numbers and percentages of vehicles above certain speeds (the posted speed limit, PSL, the speed limit plus 5 mph, SL1, and the limit plus 15 mph, SL2), plus the 85th percentile speed, the mean speed and the standard deviation. For a discussion (albeit US-focused) on the importance of the 85th percentile speed see the pdf at [https://lincoln.ne.gov/city/ltu/engine/traffic/speed-zones/pdf/regulatory-speed-limits.pdf](https://lincoln.ne.gov/city/ltu/engine/traffic/speed-zones/pdf/regulatory-speed-limits.pdf).
 
-![Figure 3](../assets/2019-07-15-fig3.png)
+![Figure 3](2019-07-15-fig3.png)
 
 But, you may ask that's only one day's worth of data, where's the rest? Well, there are separate worksheets for each day that the survey runs.
 
-![Figure 4](../assets/2019-07-15-fig4.png)
+![Figure 4](2019-07-15-fig4.png)
 
 Again, I'll cover in another post how to read all the data into a single dataset.
 

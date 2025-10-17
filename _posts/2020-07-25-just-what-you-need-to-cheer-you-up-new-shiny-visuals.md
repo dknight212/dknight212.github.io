@@ -5,7 +5,7 @@ title:  Just what you need to cheer you up - new (Shiny) visuals!
  
  I've been thinking of moving away from Power BI for a while for several reasons. First, there's nothing I like more than some change and learning a new package. Secondly, I felt that R just offers more flexibility when designing charts. So with that in mind, I've moved the visuals to [Shiny](https://rstudio.com/products/shiny), which is an app that enables you to publish your R work and make it interactive.
 
-![Fig1](../assets/2020-07-25-fig1.png)
+![Fig1](2020-07-25-fig1.png)
 
 The new visuals are at [https://trafficflows.shinyapps.io/Traffic/](https://trafficflows.shinyapps.io/Traffic/), which in itself is a lot easier to remember than the obscure URL that Power BI used.
 

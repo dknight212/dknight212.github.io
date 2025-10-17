@@ -12,7 +12,7 @@ One important point to make is that you don't need to specify under which legisl
 
 The ICO itself doesn't provide a mechanism for making requests - for that you need the site What do they know? (WDTK) [https://www.whatdotheyknow.com/](https://www.whatdotheyknow.com/).
 
-![WDTK](../assets/2019-07-15-wdtk.png)
+![WDTK](2019-07-15-wdtk.png)
 
 WDTK enables you to find public bodies, make a direct request to the appropriate body, and then track your request. It even reminds you what to do at various stages of your request. Importantly, it also makes your request and any responses publicly available and searchable by other interested parties, preventing similar requests and providing a repository of information, including any attachments. You will see in other posts that this can be useful in documenting your work. You can search in various ways, including by user, here's mine: [https://www.whatdotheyknow.com/user/david\_knight\_5/requests](https://www.whatdotheyknow.com/user/david_knight_5/requests).
 

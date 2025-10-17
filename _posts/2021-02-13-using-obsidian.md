@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Using Obsidian 
+title: Using Obsidian
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2021-02-13-ObsidianGraphView.png
+thumbnail: thumbnails/resized/5a5aac94d74e0eacb7179ee0ac814784_86cf658e.webp
 ---
 I've recently started using [Obsidian](https://obsidian.md/) for my notes. I was looking at Notion as a possible replacement for using a combination of OneNote and Google Keep but came across Obsidian and got hooked. Here are my thoughts after a month or so of using it.
 
@@ -121,7 +123,7 @@ Your vault is your vault so you can do what you want with it. When starting out 
 	- Archive - older stuff (at the moment I just move older daily journals here)
 	- Templates - the collection of templates I use
 
-- **links** - links are the prime way I relate different notes together, either directly or via mini-index files (MOCs - map of contents) 
+- **links** - links are the prime way I relate different notes together, either directly or via mini-index files (MOCs - map of contents)
 - **tags** - I use tags to denote the type of content or that something needs doing so I have tags like: 0/TODO or TYPE/AUTHOR. Of course, there's some redundancy here as author notes all ought to be in the author folder.
 
 Remember though, it's easy to change to another way of working. If you wanted to use tags to denote the subject matter then that's up to you. The Zettelkasten method might lead you to a much flatter folder structure.
@@ -141,12 +143,12 @@ A few of my favourites:
 
 There are plenty of other plugins I don't currently use. Of particular interest is Obsidian to Anki, which enables you to extract information from your vault and export it to Anki - a [spaced-repetition](https://collegeinfogeek.com/spaced-repetition-memory-technique/) application that I've used in the past both for my own purposes and for helping with learning difficulties.
 
-There is so much other customisation you can do. You can remap keys to carry out commands, for example I've mapped toggling the left-hand sidebar to CTRL-1 and the right-hand to CTRL-0. There are plenty of themes and you can even add [CSS snippets](https://forum.obsidian.md/t/how-to-achieve-css-code-snippets/8474) to fine-tune the display.
+There is so much other customisation you can do. You can remap keys to carry out commands, for example I've mapped toggling the left-hand sidebar to Ctrl-1 and the right-hand to Ctrl-0. There are plenty of themes and you can even add [CSS snippets](https://forum.obsidian.md/t/how-to-achieve-css-code-snippets/8474) to fine-tune the display.
 
 ## Graph view
 No mention of Obsidian should be without a graph view, so here's mine, made nicer because the latest version provides the ability to colour by tag (or by other features):
 
-![Obsidian graph view](../assets/2021-02-13-ObsidianGraphView.png)
+![Obsidian graph view](2021-02-13-ObsidianGraphView.png)
 
 It's fun to see all the links and to zoom around, but for me the most useful part of the graph is to see obviously unlinked files. There's a local graph view for each note, in which you can just see the links for that file, extending out to different depths if you want.
 
