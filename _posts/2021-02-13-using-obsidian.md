@@ -2,7 +2,7 @@
 layout: post
 title:  Using Obsidian 
 ---
-I've recently started using [Obsidian](https://obsidian.md/) for my notes. I was looking at Notion as a possible replacement for using a combination of OneNote and Google Keep but came across Obsidian and got hooked. Here are my thoughts after a month or so of using it. Test.
+I've recently started using [Obsidian](https://obsidian.md/) for my notes. I was looking at Notion as a possible replacement for using a combination of OneNote and Google Keep but came across Obsidian and got hooked. Here are my thoughts after a month or so of using it.
 
 ## Why Obsidian?
 
