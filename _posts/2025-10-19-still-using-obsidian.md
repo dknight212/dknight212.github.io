@@ -65,7 +65,7 @@ By default, and even more so with the right plugins, Obsidian offers an extremel
 
 Previously, I mentioned how the global graph view on Reddit sometimes turns into a competition, with users bragging about their sprawling note networks. It’s as though people want to prove their “graph” is bigger and more impressive than anyone else’s.
 
-So here goes - for comparison, check the graph from my [earlier post](using-obsidian) and the updated one from today. Notes that are no longer relevant have been dimmed out, but you can still see how everything fits together. This helps visualise the changes in my knowledge base at a glance. The lighter dots represent daily notes, the green notes represent articles and books, and the orange notes are concepts. Red notes are (generally) local indexes.
+So here goes - for comparison, check the graph from my [earlier post](/using-obsidian) and the updated one from today. Notes that are no longer relevant have been dimmed out, but you can still see how everything fits together. This helps visualise the changes in my knowledge base at a glance. The lighter dots represent daily notes, the green notes represent articles and books, and the orange notes are concepts. Red notes are (generally) local indexes.
 
 ![Obsidian graph view](../assets/2025-10-19-ObsidianGraphView.png)
 
