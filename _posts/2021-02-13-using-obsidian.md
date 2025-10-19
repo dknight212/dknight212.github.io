@@ -148,7 +148,7 @@ There is so much other customisation you can do. You can remap keys to carry out
 ## Graph view
 No mention of Obsidian should be without a graph view, so here's mine, made nicer because the latest version provides the ability to colour by tag (or by other features):
 
-![Obsidian graph view](2021-02-13-ObsidianGraphView.png)
+![Obsidian graph view](../assets/2021-02-13-ObsidianGraphView.png)
 
 It's fun to see all the links and to zoom around, but for me the most useful part of the graph is to see obviously unlinked files. There's a local graph view for each note, in which you can just see the links for that file, extending out to different depths if you want.
 
