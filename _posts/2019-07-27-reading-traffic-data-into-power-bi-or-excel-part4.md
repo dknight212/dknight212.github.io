@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Reading traffic data into Power BI or Excel - part 4
+title: Reading traffic data into Power BI or Excel - part 4
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-27-fig1.png
+thumbnail: thumbnails/resized/5b566e5198686f84a198a7308a67a399_86cf658e.webp
 ---
  
 In [part 3](/reading-traffic-data-into-power-bi-or-excel-part3), we finally looked at bringing the survey data into Power BI. Let's now tidy that up a bit and bring all the different data tables together so we can start to analyse the data. We'll meet a useful new technique - unpivot.

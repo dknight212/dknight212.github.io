@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  World choropleth maps in r with ggplot2
+title: World choropleth maps in r with ggplot2
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2020-06-20b-fig1.png
+thumbnail: thumbnails/resized/93ca53e4fa5289b8a1bfc53087138e9d_86cf658e.webp
 ---
  
 An appendum to my [previous post](/creating-choropleth-maps-in-r-with-ggplot2) in which I discussed UK choropleths in R.

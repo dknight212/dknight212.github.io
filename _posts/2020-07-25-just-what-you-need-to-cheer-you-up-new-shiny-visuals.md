@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Just what you need to cheer you up - new (Shiny) visuals!
+title: Just what you need to cheer you up - new (Shiny) visuals!
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2020-07-25-fig1.png
+thumbnail: thumbnails/resized/2cd5b7cbfaf09979b58a913b1f7b924a_86cf658e.webp
 ---
  
  I've been thinking of moving away from Power BI for a while for several reasons. First, there's nothing I like more than some change and learning a new package. Secondly, I felt that R just offers more flexibility when designing charts. So with that in mind, I've moved the visuals to [Shiny](https://rstudio.com/products/shiny), which is an app that enables you to publish your R work and make it interactive.

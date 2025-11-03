@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Coping with a different format - Richmond Park Surveys
+title: Coping with a different format - Richmond Park Surveys
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-08-05-fig1.png
+thumbnail: thumbnails/resized/f42023baeb6bf265acf068d3b3e31716_86cf658e.webp
 ---
  
 Well, it had to happen didn't it? The next traffic surveys, [a bunch of slightly dated Richmond Park data](https://www.whatdotheyknow.com/request/richmond_park_automatic_travel_c#outgoing-925111), use a different layout. So this brings forward what I was thought I was going to do anyway - have separate tables for each input type and then merge together into the main tables. It also allows me to introduce several other features of Power Query/M - fill-down and merge. This is necessarily a long read as it means revisiting steps that were covered in several previous posts. Still, the obstacle is the way!

@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Making FOI requests
+title: Making FOI requests
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-15-wdtk.png
+thumbnail: thumbnails/resized/8e3ed5b1c5ac695fac5ffda153a8a4eb_86cf658e.webp
 ---
  A brief post on how to make Freedom of Information Requests to request traffic data.
 

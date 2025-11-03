@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  A look at some traffic data!
+title: A look at some traffic data!
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-15-fig1.png
+thumbnail: thumbnails/resized/a1e05df6d019618c2b616c4e60ec9358_86cf658e.webp
 ---
  
 A quick look at what you might get back from a local authority. In [a previous post](\making-foi-requests), I looked at how you might request data from a local authority. Now, what do you get?

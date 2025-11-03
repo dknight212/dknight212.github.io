@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  UK choropleth maps in R - merging with ONS data
+title: UK choropleth maps in R - merging with ONS data
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2020-06-20a-fig1.png
+thumbnail: thumbnails/resized/28f973a4bc8823f44924b858b87d5af2_86cf658e.webp
 ---
  
 This follows on from the [previous post on UK choropleths](/creating-choropleth-maps-in-r-with-ggplot2), except now we'll be using real data.

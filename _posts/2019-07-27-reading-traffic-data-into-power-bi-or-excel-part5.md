@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Reading traffic data into Power BI or Excel - part 5
+title: Reading traffic data into Power BI or Excel - part 5
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-27b-fig1.png
+thumbnail: thumbnails/resized/ebf65a9f06ba813124b731acb1bbbdfc_86cf658e.webp
 ---
  
 In this post, we'll get to see what Power BI can do to visualise the data. OK, so this isn't really Excel related any more but it's part of a series so please don't get at me about the title.

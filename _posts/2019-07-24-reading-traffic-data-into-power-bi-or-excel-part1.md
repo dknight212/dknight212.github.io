@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Reading traffic data into Power BI or Excel - part 1
+title: Reading traffic data into Power BI or Excel - part 1
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-24-fig1.png
+thumbnail: thumbnails/resized/31226eb408aac99457ada44cd924137c_86cf658e.webp
 ---
  
 OK, so [reading the data into R](/reading-traffic-data-into-r) was too much for you, is there an easier way? Yes! This post will introduce you to Power BI and its half-sister Power Query. This will be the first in a series of posts that will take you through the process of producing interactive charts on the Internet sitting on top of a scalable database.

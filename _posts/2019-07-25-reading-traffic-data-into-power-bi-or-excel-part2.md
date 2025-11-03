@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Reading traffic data into Power BI or Excel - part 2
+title: Reading traffic data into Power BI or Excel - part 2
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-25-fig1.png
+thumbnail: thumbnails/resized/ef8f272b96d3b8addf20e5038a3c11ac_86cf658e.webp
 ---
  
 Assuming you've downloaded Power BI ([see previous post](/reading-traffic-data-into-power-bi-or-excel-part1)), let's use it to read in some data.

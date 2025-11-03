@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Reading traffic data into R
+title: Reading traffic data into R
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-15-fig1.png
+thumbnail: thumbnails/resized/a1e05df6d019618c2b616c4e60ec9358_86cf658e.webp
 ---
  
 So you've got some traffic data, how do we get the data into a dataset so we can analyse it? Let's use the R language to explore the data.

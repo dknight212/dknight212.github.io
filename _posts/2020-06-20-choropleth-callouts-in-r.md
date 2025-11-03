@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Choropleth callouts in R
+title: Choropleth callouts in R
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2020-06-20c-fig1.png
+thumbnail: thumbnails/resized/e50cf9d56691f1e7b72b470df74eb391_86cf658e.webp
 ---
  
 Addendum to my [last post on ONS data](/uk-choropleth-maps-in-r-merging-with-ons-data).

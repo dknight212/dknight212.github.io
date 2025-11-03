@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Reading traffic data into Power BI or Excel - part 3
+title: Reading traffic data into Power BI or Excel - part 3
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-26-fig1.png
+thumbnail: thumbnails/resized/1358439f4fba96ceca86651b31645706_86cf658e.webp
 ---
  
 In [Part 2 of this series](/reading-traffic-data-into-power-bi-or-excel-part2), we read in the accompanying data, in this part I show you how to read the traffic data from the survey workbooks into our Power BI dataset. I've deliberately separated this out from the other data sources as this is more complex. We want to write the query in such a way that when we add a new survey, all we need to do is refresh the query without rewriting everything. This takes a bit more thought. I hope you find the steps here useful even if you're not reading in traffic data. These are very powerful techniques that can be used whenever you want to read in multiple worksheets from multiple workbooks in a folder. Remember that the steps shown here will work in Power Query in Excel as well as in Power BI but I'll be using the latter in the examples.

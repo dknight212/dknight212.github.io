@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Reading traffic data into Power BI or Excel - part 6
+title: Reading traffic data into Power BI or Excel - part 6
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-30-fig1.png
+thumbnail: thumbnails/resized/8a1f986c6a4f04e32668118e5eafdad1_86cf658e.webp
 ---
  
 In the [last post](/reading-traffic-data-into-power-bi-or-excel-part5), we added some visuals into our Power BI report. I hope you had fun playing with the visuals! Now we're going to share our work with other people.

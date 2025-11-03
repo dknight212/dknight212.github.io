@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  Creating choropleth maps in R with ggplot2
+title: Creating choropleth maps in R with ggplot2
+feature: 20 Areas/29 Projects/31 Blog posts/assets/2020-06-12-fig1.png
+thumbnail: thumbnails/resized/093174daada02d817063427e47e633d4_86cf658e.webp
 ---
  
 If there's one thing I love, it's maps (ok, that's many things). Combined with data and computers and I'm in heaven. I put these notes together for work but I felt they're worth sharing wider as there don't seem to be many very easy to follow guides to UK choropleths in R.
