@@ -2,8 +2,6 @@
 layout: post
 title: Modal editors
 ---
-
-## Modal editors
 (I use the term vi-like as a catch-all for editors and ways of using editors or other text-based programs which use key combinations like vi).
 
 I first used a modal editor back in around 1987 when I had to use the HM Treasury tax and benefit (IGOTM) model. Part of this was written in C and the only way of editing the code at the time was to connect to the Treasury server and use vi. What was already a complex problem (understanding the model and C) became even more confusing with such an esoteric editor and strange invocations like the substitute command and regex.
