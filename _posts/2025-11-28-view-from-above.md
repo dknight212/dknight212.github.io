@@ -2,7 +2,7 @@
 layout: post
 title:
 ---
-The view from above is one of simplest Stoic techniques to distance you from everyday concerns and to, almost literally, put things into perspective. You can use this to step back from troubles and to restore proportion. It will help you distance yourself from your negative thoughts about the world, about people, or other things which are causing you mental anguish.
+The view from above is one of the simplest Stoic techniques to distance you from everyday concerns and to, almost literally, put things into perspective. You can use this to step back from troubles and to restore proportion. It will help you distance yourself from your negative thoughts about the world, about people, or other things which are causing you mental anguish.
 
 “Think of substance in its entirety, of which you have the smallest of shares; and of time in its entirety, of which a brief and momentary span has been assigned to you; and of the works of destiny, and how very small is your part in them.” - Marcus Aurelius, _Mediations_
 
