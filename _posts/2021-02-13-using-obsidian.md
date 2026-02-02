@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Using Obsidian
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2021-02-13-ObsidianGraphView.png
-thumbnail: thumbnails/resized/5a5aac94d74e0eacb7179ee0ac814784_86cf658e.webp
+feature: 20 Areas/31 Blog posts/assets/2021-02-13-ObsidianGraphView.png
+thumbnail: thumbnails/resized/86133f53e9a86674614bcb09d3ea2ed5_86cf658e.webp
 ---
 I've recently started using [Obsidian](https://obsidian.md/) for my notes. I was looking at Notion as a possible replacement for using a combination of OneNote and Google Keep but came across Obsidian and got hooked. Here are my thoughts after a month or so of using it.
 
@@ -148,7 +148,7 @@ There is so much other customisation you can do. You can remap keys to carry out
 ## Graph view
 No mention of Obsidian should be without a graph view, so here's mine, made nicer because the latest version provides the ability to colour by tag (or by other features):
 
-![Obsidian graph view](../assets/2021-02-13-ObsidianGraphView.png)
+![Obsidian graph view](2021-02-13-ObsidianGraphView.png)
 
 It's fun to see all the links and to zoom around, but for me the most useful part of the graph is to see obviously unlinked files. There's a local graph view for each note, in which you can just see the links for that file, extending out to different depths if you want.
 

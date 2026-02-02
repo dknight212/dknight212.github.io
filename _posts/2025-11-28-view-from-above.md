@@ -1,6 +1,8 @@
 ---
 layout: post
 title:
+feature: 20 Areas/27 Blog/assets/2026-02-02-you-above.png
+thumbnail: thumbnails/resized/8e1f625b87303e909ba0ff2523fb1da9_86cf658e.webp
 ---
 The view from above is one of the simplest Stoic techniques to distance you from everyday concerns and to, almost literally, put things into perspective. You can use this to step back from troubles and to restore proportion. It will help you distance yourself from your negative thoughts about the world, about people, or other things which are causing you mental anguish.
 
@@ -14,13 +16,15 @@ We can use this technique by visualising or otherwise imagining ourselves as bei
 
 The intention here is not to belittle your problems but to put them into the perspective of other people's problems, and to remind you that you are not alone - you share suffering and anguish with many other people.
 
-"Let us remember that they are fellow-sufferers in the same darkness, actors in the same tragedy with ourselves.”  - Bertrand Russell _A Free Man's Worship_
+"Let us remember that they are fellow-sufferers in the same darkness, actors in the same tragedy with ourselves.” - Bertrand Russell _A Free Man's Worship_
 
 There are people out there that you see every day and you just don't know what they're going through. You are obviously so concerned with your own experiences, both positive and negative, and sometimes it helps just to be outside yourself, using the view from above, and to consider that other people have problems similar to, and often much worse than, yours. Some people just get on with it and some don't, some suffer immense pain, and you just have no way of knowing from outside which people are going through these tests. And, in the same way, they may see you and they don't notice the big conflicts you're going through. These issues are things that you're concerned with, but you can also put them into context using this metaphorical perspective technique. We share this society with others, we are not alone.
 
 “Humans have evolved to be a very social species whose very survival has depended upon the care, support and friendship of others.”  - Paul Gilbert, _Overcoming Depression_
 
 We could go further and perhaps imagine our entire town, city, county, country or continent from further above, and consider the hundreds of thousands or millions of people encompassed within that area, and similarly how they actually have issues which outweigh our own, and just perhaps how minuscule our own problems are in relation to those in total.
+
+![You and others from above](2026-02-02-you-above.png)
 
 And we can go out even further way out into space and look back at the Earth, whether you're thinking of the "pale blue dot"  (https://www.planetary.org/worlds/pale-blue-dot) and even further where the Earth is no longer visible. As Carl Sagan says, just how alone we are in the universe - this is all we have. This moment now is all we have. Some of what Sagan mentions I will return to in View from the Side, particularly these very Stoic feelings:
 

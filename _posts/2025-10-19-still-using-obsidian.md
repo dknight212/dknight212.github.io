@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Still using Obsidian
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2025-10-19-ObsidianGraphView.png
-thumbnail: thumbnails/resized/22ca5593156cada75811c72a5da7db7d_86cf658e.webp
+feature: 20 Areas/31 Blog posts/assets/2025-10-19-ObsidianGraphView.png
+thumbnail: thumbnails/resized/ab3be52a3f3ae47ce550739e21b8d24e_86cf658e.webp
 ---
 
 So I said I'm still using Obsidian, why have I kept at it for nearly 5 years when I'm normally such a flirt for apps?
@@ -67,7 +67,7 @@ Previously, I mentioned how the global graph view on Reddit sometimes turns into
 
 So here goes - for comparison, check the graph from my [earlier post](/using-obsidian) and the updated one from today. Notes that are no longer relevant have been dimmed out, but you can still see how everything fits together. This helps visualise the changes in my knowledge base at a glance. The lighter dots represent daily notes, the green notes represent articles and books, and the orange notes are concepts. Red notes are (generally) local indexes.
 
-![Obsidian graph view](../assets/2025-10-19-ObsidianGraphView.png)
+![Obsidian graph view](2025-10-19-ObsidianGraphView.png)
 
 ## Backing up
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Exploring traffic flows in Power BI
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-14-power-bi.png
-thumbnail: thumbnails/resized/57af88a2ed174c78f0431e531183e9fe_86cf658e.webp
+feature: 20 Areas/27 Blog/Final/2019-07-14-power-bi.png
+thumbnail: thumbnails/resized/00eb1642abe070244f5ee71157660b2c_86cf658e.webp
 ---
 (this is the original text except I've removed the link to the Power BI report)
 
