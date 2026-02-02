@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Reading traffic data into Power BI or Excel - part 5
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-27b-fig1.png
-thumbnail: thumbnails/resized/ebf65a9f06ba813124b731acb1bbbdfc_86cf658e.webp
 ---
  
 In this post, we'll get to see what Power BI can do to visualise the data. OK, so this isn't really Excel related any more but it's part of a series so please don't get at me about the title.
 
 I'll assume you've followed all the steps so far and got all seven tables prepared (including the Dates table) and have set up the relations. Now we use the visualisation side of Power BI to table or chart the data in ways that are useful. Let's check out the various parts of that window:
 
-![](2019-07-27b-fig1.png)
+![](../assets/2019-07-27b-fig1.png)
 
 The primary parts are:
 
@@ -33,15 +31,15 @@ Let's create a simple table of data. In the visualisations selection, hover over
 
 Now drag the DateTime field into the table - you can rearrange the column order in the field well. You should see something like this:
 
-![](2019-07-27b-fig2.png)
+![](../assets/2019-07-27b-fig2.png)
 
 That's not quite what we want. What Power Bi has done here is to use its built-in date hierarchy to aggregate the data to each day (and we could do it to quarters etc). That's all very well for financial data but we want actual date time values. In the field well, click on drop-down menu on the right of DateTime and select DateTime instead of Date Hierarchy. Then click on the DateTime column in the table to sort by it. The table now looks like this:
 
-![](2019-07-27b-fig3.png)
+![](../assets/2019-07-27b-fig3.png)
 
 How do we filter to just one survey (or by any particular dimension)? Drag the field you wish to use as a filter to the filter well. Here I've dragged the Survey field to the Visualisation filter and then set it to just S00001 (I'll leave you to play around and find out all the other filter options).
 
-![](2019-07-27b-fig4.png)
+![](../assets/2019-07-27b-fig4.png)
 
 Can we make the filter more dynamic so that the user can choose it without having to play around with the filter well? We can use a Filter visual which does just that. Although you can change the way visuals interact, the default is that a filter visual will limit down the data on a page in exactly the same way as a Page filter.
 
@@ -49,15 +47,15 @@ It's important to deselect a visual before selecting another one unless you wish
 
 The default settings for a filter visual are for only one value to be selected at one time unless you hold down Ctrl. You can change the settings for any visual by clicking on little paint-roller icon above the field-well. The settings for a filter visual are shown below:
 
-![](2019-07-27b-fig5.png)
+![](../assets/2019-07-27b-fig5.png)
 
 Open out the Selection controls and choose the following settings:
 
-![](2019-07-27b-fig6.png)
+![](../assets/2019-07-27b-fig6.png)
 
 which gives the following look to the filter:
 
-![](2019-07-27b-fig7.png)
+![](../assets/2019-07-27b-fig7.png)
 
 Play around with all the settings to explore. Try dragging the date field from the Dates table to a new filter visual - what does it look like?
 
@@ -65,29 +63,29 @@ Above I said to deselect a visual before adding a new one. If you don't then the
 
 Select the table by clicking anywhere within it. Now click on the Clustered column chart icon in the visualisation selection pane. The table converts straightaway using the first column as the x axis and the second as the y axis. You might want to play around with the proportions of your chart to make it more pleasing.
 
-![](2019-07-27b-fig8.png)
+![](../assets/2019-07-27b-fig8.png)
 
 Why is there such a gap between the dates? That's because the two surveys were carried out in different periods and the chart is showing all the dates in between. If you still got the survey title in your filter visual you can limit the dataset just to one survey:
 
-![](2019-07-27b-fig9.png)
+![](../assets/2019-07-27b-fig9.png)
 
 Powerful, isn't it? If you hover over each bar on the chart you see a tooltip pop up that shows the underlying data. You can also add other fields to the tooltip by dragging them to the Tooltips value in the field well.
 
 Map visuals are my favourites. There are two map visuals available in the default visuals set. Let's use the one just called Map. Create a new page by clicking on the plus sign at the bottom of the window. To locate data on this map you need either a postcode or latitude/longitude pairs. I'd recommend the latter if you want to really pin-point a location - a postcode can cover a surprisingly large area.
 
-![](2019-07-27b-fig10.png)
+![](../assets/2019-07-27b-fig10.png)
 
 You can also use the legend (or a data point) from a visual as a filter - click on a value in the legend or on a data-point and all other visuals will use that as a filter (if they don't in any way reference that data then the other visuals will ignore the filter).
 
 The matrix visual is useful if you want to summarise data quickly. The following matrix shows the total numbers for each survey and each direction for the two lowest speed columns.
 
-![](2019-07-27b-fig11.png)
+![](../assets/2019-07-27b-fig11.png)
 
 You can change the summary function from Sum to something else by clicking on the drop-down icon next to the field name in the Values box (or by right-clicking on the name). Power BI will rename the columns to (for example) Average of ... You can set your own names by right-clicking on the name in the Values box and choosing Rename.
 
 Be very careful how you interpret the results, here I've changed the summary function to Average (ie mean) and changed the titles:
 
-![](2019-07-27b-fig12.png)
+![](../assets/2019-07-27b-fig12.png)
 
 Remember that we're using pre-summarised data and the unit of observation is the hour. So here, the value 0.89 for MPH0 S00002 Eastbound means that for that survey the average number of vehicles travelling between 0 and 10 mph in each hour was 0.89. Across all surveys and all directions the average figure was 0.81.
 

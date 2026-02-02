@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Coping with a different format - Richmond Park Surveys
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-08-05-fig1.png
-thumbnail: thumbnails/resized/f42023baeb6bf265acf068d3b3e31716_86cf658e.webp
 ---
  
 Well, it had to happen didn't it? The next traffic surveys, [a bunch of slightly dated Richmond Park data](https://www.whatdotheyknow.com/request/richmond_park_automatic_travel_c#outgoing-925111), use a different layout. So this brings forward what I was thought I was going to do anyway - have separate tables for each input type and then merge together into the main tables. It also allows me to introduce several other features of Power Query/M - fill-down and merge. This is necessarily a long read as it means revisiting steps that were covered in several previous posts. Still, the obstacle is the way!
@@ -84,13 +82,13 @@ Let's now dive into the T data workbooks. There is one workbook per survey. Each
 
 The location plan very helpfully provides the latitude and longitude (though in DMS rather than D.ddd format, [easily fixed](https://www.latlong.net/degrees-minutes-seconds-to-decimal-degrees)) for each survey and map to confirm the exact position.
 
-![Fig1](2019-08-05-fig1.png)
+![Fig1](../assets/2019-08-05-fig1.png)
 
 ## The new data structure  
 
 The data sheets are the only thing we need to import so let's look at those in more detail.
 
-![Fig2](2019-08-05-fig2.png)
+![Fig2](../assets/2019-08-05-fig2.png)
 
 After some preliminary rows which can be ignored, we have a single date cell, followed by a blank row, the column headings, then the data. The first column is the time (on the above date) or, rather, 15 minute segments starting with the given time. The second column is just the flow, then the next columns are the 10 vehicle classes - the ARX classification at the end lists them as:
 
@@ -111,19 +109,19 @@ Class 1 is clearly going to be another issue - it merges cycles and motorcycles.
 
 The Fix1 column isn't used. The Time is then repeated then we have the columns:
 
-![Fig3](2019-08-05-fig3.png)
+![Fig3](2019-08-05-fig3.../assets/png)
 
 Again we have an inconsistency - for some reason the S surveys didn't have a column for 0-5 mph but the T surveys do. We're not that interested in slow speeds (except perhaps for speed/flow scatter-plots) so we will merge the first two columns of the T surveys into a 0-10 mph column.
 
 The final columns should be familiar, though there is no standard deviation of speed and the SL1 column is speed limit plus 4 mph (not 5 mph). I don't think either of these is anything to make much fuss about. The final Fix1 column is not used.
 
-![Fig4](2019-08-05-fig4.png)
+![Fig4](../assets/2019-08-05-fig4.png)
 
 There are no percentage columns at all so we have less columns to remove.
 
 As mentioned above the data are grouped by date so at the end of the first date's data (plus summary rows for day period) we have the next date's data:
 
-![Fig5](2019-08-05-fig5.png)
+![Fig5](../assets/2019-08-05-fig5.png)
 
 This carries on until the groups for:
 
@@ -165,7 +163,7 @@ Let's go through the steps we need to take to import the T dataset. I won't show
 4. Add a custom column, Data = Excel.Workbook(\[Content\]) 
 5. Expand the Data column so you now have this:
 
-![Fig6](2019-08-05-fig6.png)
+![Fig6](../assets/2019-08-05-fig6.png)
 
 6. Now filter the Data.Name column to just those ending in "bound Data"
 7. Still on that column, Transform, Replace values " Data" to ""
@@ -175,7 +173,7 @@ Let's go through the steps we need to take to import the T dataset. I won't show
 11. Duplicate that column and scroll over to the copy.
 12. Change the type of the duplicate column to Date Time. You should now have a column with a few dates, some nulls where there were blank rows and some errors where there were data or text rows that can't be converted to date times. Then convert the column again to Date. Why this two stage process? Unfortunately if you convert to straight to date then time values get successfully converted to dates. Try it and see.
 
-![Fig7](2019-08-05-fig7.png)
+![Fig7](../assets/2019-08-05-fig7.png)
 
 13. Replace errors with null so now you've got a column of nulls except for the dates at the head of each group (and keep bearing with me on the 1/1/1901 dates, they're still in there too)
 14. Now for fill-down! Right-click on the column and choose Fill, Down. What fill-down does is look for the first non-null value in a column, it will then use that value for all rows below it until it finds another non-null value. It then uses the new value and so on. For example:
@@ -227,11 +225,11 @@ What about the inconsistencies in the data. Let's take them one by one:
 
 Cycles or motorcycles? Given that the ARX classifications in the workbooks state that Motorcycles is the dominant vehicle type for Class 1, I originally allocated the entire class to motorcycles. However, the S surveys also purportedly use the same scheme but somehow pull out the cyclists. I do not know how they have done this. The lack of cyclists is obviously a deficiency in the dataset for a place like Richmond Park, almost alone in London (except perhaps Regents Park) in its magnetism for cyclists. On the other hand, I do wonder about how accurate ATC equipment is for distinguishing a heavy cyclist from, say, a light moped. However, I then looked at the data and compared with the other surveys in the entire dataset (here with the entire Richmond Park class 1 allocated to motorcycles :
 
-![Fig8](2019-08-05-fig8.png)
+![Fig8](../assets/2019-08-05-fig8.png)
 
 The proportion for motorcycles in Richmond Park is way out of step with those for Tranmere Road (an ordinary residential road) and Magdalen Road (a cycle "quietway"). In addition, the Site 5 and Site 6 surveys have an even higher proportion of cycles. As discussed elsewhere in this blog, these surveys are off the main commuter cut-through routes so this is exactly what we'd expect if the data are referring to people using the Park for recreational cycling. Moreover, the proportions for the weekend are even more telling:
 
-![Fig9](2019-08-05-fig9.png)
+![Fig9](../assets/2019-08-05-fig9.png)
 
 We have no reason to think that motorcyclists have a particular predilection for Richmond Park, so we have to assume that the bulk of the Class 1 is made up of cyclists. We then have to decide whether to allocate the whole of Class 1 to cycles. This would clearly be overestimating self-propelled two-wheelers and ignoring motorcyclists. A better way would be to use the proportions of motorcycles (let's use 3.5% as a rough estimate) from other surveys as an estimate and then allocate the remainder to cycles. That is,
 
@@ -252,7 +250,7 @@ Cycles = List.Max({[Class 1] - [Flow] * 0.035, 0})
 
 Either way, there may be some rounding errors - the sum of all vehicles may not add exactly to the Flow column. This gives us:
 
-![Fig10](2019-08-05-fig10.png)
+![Fig10](../assets/2019-08-05-fig10.png)
 
 MPH - nothing for this but to add up MPH0 and MPH5 to a temporary custom column in the T survey query, remove the MPH0 and MPH5 columns and rename the temporary column MPH0
 
@@ -288,7 +286,7 @@ This takes the time, multiples it by 24, rounds it and then divides by 24, creat
 6. Move the new column to the beginning
 7. We only want to sum up the Flow column so select Transform, Group By and use the following settings:
 
-![Fig11](2019-08-05-fig11.png)
+![Fig11](../assets/2019-08-05-fig11.png)
 
 What this does is to create a new column called Flow (overwriting the existing one) which contains the sum of the existing Flow column for each combination of Survey, Direction and Date time. Any columns not mentioned in either the Group by or the New column listings are automatically dropped. You could, if you wanted, go through all columns and add each in the above dialog box or you could edit the underlying M code. The M code for the Group by summary is:  
 

@@ -1,8 +1,6 @@
 ---
 layout: post
 title: UK choropleth maps in R - merging with ONS data
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2020-06-20a-fig1.png
-thumbnail: thumbnails/resized/28f973a4bc8823f44924b858b87d5af2_86cf658e.webp
 ---
  
 This follows on from the [previous post on UK choropleths](/creating-choropleth-maps-in-r-with-ggplot2), except now we'll be using real data.
@@ -23,7 +21,7 @@ Note that read_csv spits back the column definitions it uses to parse the data a
 
 The data look like this:
 
-![](2020-06-20a-fig1.png)
+![](../assets/2020-06-20a-fig1.png)
 
 If you scroll down a bit you'll see that the data are a mix of different levels (England and Wales, Great Britain, local authorities etc). That's ok as when we merge with an appropriate map table we can exclude any extra rows. The data also contains data for two age-groups - 65+ and 85+ and also some NAs in the main data column V4_1. We'll need to be aware of that before mapping.
 
@@ -35,7 +33,7 @@ sourcemap <- "Local_Authority_Districts_December_2019_Boundaries_UK_BUC-shp" sou
 
 Before we tidy shp, we need to find out what the ID column is called. Use View(shp) or single-click on shp in the environment list. Remember that map shape files contain several lists - expand the data one thus:
 
-![](2020-06-20a-fig2.png)
+![](../assets/2020-06-20a-fig2.png)
 
 We don't want the area names, merely the ID codes. These are in the lad19cd column, so we can tidy the shape file keeping that column:
 
@@ -45,7 +43,7 @@ mapdata <- tidy(shp, region = "lad19cd")
 
 Mapdata looks like this:
 
-![](2020-06-20a-fig3.png)
+![](../assets/2020-06-20a-fig3.png)
 
 We now want to merge this with the age sex ratio data, using the same left join technique as before. However, we also want to exclude the NAs and only have data for the 65+ ratios. Because we have tidyverse loaded we can do this in one pipe:
   
@@ -86,6 +84,6 @@ ggplot(data = df2,
     theme_void()
 ```
   
-![](2020-06-20a-fig4.png)
+![](../assets/2020-06-20a-fig4.png)
 
 There's a lot you can do here to tart this up, change the legend title, add a plot title, change the colour scheme, etc.

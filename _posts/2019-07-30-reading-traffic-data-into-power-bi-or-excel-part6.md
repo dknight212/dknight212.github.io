@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Reading traffic data into Power BI or Excel - part 6
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-30-fig1.png
-thumbnail: thumbnails/resized/8a1f986c6a4f04e32668118e5eafdad1_86cf658e.webp
 ---
  
 In the [last post](/reading-traffic-data-into-power-bi-or-excel-part5), we added some visuals into our Power BI report. I hope you had fun playing with the visuals! Now we're going to share our work with other people.
@@ -30,7 +28,7 @@ Oddly you can't yet export to PowerPoint until you've published to the Internet 
 
 If you want to publish so that anyone can see your report, you need to go through a two-step process. Firstly, click on Publish (in the Home tab). Unless you are in an organisation with Groups set up (see later), you will only have the option of publishing to "My workspace". This is an area on the Power BI website that only you can access.
 
-![](2019-07-30-fig1.png)
+![](../assets/2019-07-30-fig1.png)
 
 Click on Select. If you've already published the report, you'll be asked to confirm overwriting it. After a short while, Power BI will give you a success report and ask if you want to open the file in Power BI (by this, it means the Power BI website). Click the link offered and it will open in your browser. You can now see your report and interact with it in exactly the same way as in the desktop application. You can also edit the report but I wouldn't advise this except for small changes.
 

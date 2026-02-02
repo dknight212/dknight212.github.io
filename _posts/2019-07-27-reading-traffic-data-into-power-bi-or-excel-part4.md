@@ -71,7 +71,7 @@ The column Flow and all the columns to the right of the column named 4500 relate
 
 Now comes some more Power Query magic - highlight the columns 0015 to 4500 and from the Transform menu (or the right-click menu) choose Unpivot Columns. Just like gather in R, this creates two columns out of the four. Each pair of values is an unfolded version of the columnar data. The first column is called Attribute and in this case refers to the quarterly time period, let's rename it QTime. The table now looks like this:
 
-![](2019-07-27-fig1.png)
+![](../assets/2019-07-27-fig1.png)
 
 What does this mean? You need to read the Time and QTime columns together. A Time of 00:00:00 and a QTime of 0015 means the period from 00:00 to 00:15. 00:00:00 and 1530 means 00:15 to 00:30, etc. We need to merge these columns together in a single field so that can use it for charting. We need to extract the hour from the Time field, and the first two digits of QTime to make the minutes. As ever, there are several ways of doing this (and we made it slightly harder on ourselves by changing the data-type of the Time from text earlier). Anyway, create a new column called NewTime with the following formula:
 
@@ -85,13 +85,13 @@ Now, let's make a new DateTime column using the new time column (the latter shou
 
 The table show now look like this:
 
-![](2019-07-27-fig2.png)
+![](../assets/2019-07-27-fig2.png)
 
 We also need to create two other tables that will help with charting and filtering. We might want to be able to distinguish between peak and non-peak periods in a similar way to how we distinguish between weekdays and weekends in the Dates table. Let's create a Times table and we're going to just type the values directly into a Power Query table. You could of course put these into a workbook and read it in but these values are not likely to change so hard-coding is not such an issue. As ever, there are several ways of doing this including use of a formula but let's type the values.
 
 In the Power Query Editor, click on Enter Data. You'll see a mini-spreadsheet with a single cell. Double-click on the first column and rename it Time. Press Tab to go to the next column and rename it Period. Click into the first data cell in the first column and type 0000, press Tab and type Night in the second column. Click in the first column's second data cell and type 0100, type Night in the second column. If you accidentally create a new column or row, right-click on it and choose Delete. Carry on to 2300, until the table looks like this:
 
-![](2019-07-27-fig3.png)
+![](../assets/2019-07-27-fig3.png)
 
 I've renamed the table to TimesTable. Click on OK and change the data type of the Time column to Time. You can, of course, use your own definitions of Period but you're limited to each hour for the vehicle type flows. If you wanted, you could set up a separate Times table for the 15 minute all-vehicle flows - you'd definitely want to use a formula for that one or cheat in Excel and then read it in.
 
@@ -116,10 +116,10 @@ Let's now relate these tables together. We have to go to the Visualisation windo
 
 Just to make sure all the queries have run properly, click Close and Apply in the Power Query Editor window. Then click on Manage Relationships. You may find that Power BI has automatically related some tables. Sometimes it gets it right, sometimes not, so always check. Any table with a survey column needs to be related to the Survey metadata table using the Survey ID column like this:
 
-![](2019-07-27-fig4.png)
+![](../assets/2019-07-27-fig4.png)
 
 Set up all the following relationships:
 
-![](2019-07-27-fig5.png)
+![](../assets/2019-07-27-fig5.png)
 
 So now we've got all the data into Power BI and related all the tables. In the next post, I'll show you how to actually create some visualisations in Power BI. Again, use the video at [https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-report-add-visualizations-i](https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-report-add-visualizations-i) if you want to rush ahead.

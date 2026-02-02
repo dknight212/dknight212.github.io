@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Choropleth callouts in R
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2020-06-20c-fig1.png
-thumbnail: thumbnails/resized/e50cf9d56691f1e7b72b470df74eb391_86cf658e.webp
 ---
  
 Addendum to my [last post on ONS data](/uk-choropleth-maps-in-r-merging-with-ons-data).
@@ -90,7 +88,7 @@ That way means you don't have to specify the other end point.
 
 Anyway, the final map is shown below:
 
-![](2020-06-20c-fig1.png)
+![](../assets/2020-06-20c-fig1.png)
 
 Again, you can prettify this by adding titles and a line from the callout to the London area. Changing the plot code to the following makes it look nicer:
 
@@ -141,4 +139,4 @@ Notes on the above:
 
 So the final product is:
 
-![](2020-06-20c-fig2.png)
+![](../assets/2020-06-20c-fig2.png)

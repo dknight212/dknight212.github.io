@@ -1,6 +1,6 @@
 ---
 layout: post
-title:
+title: View over time
 ---
 In the previous post, we explored the view from above, which helps us put things into perspective.  Let's move to another perspective - the view from the side, which is a timeline approach.
 

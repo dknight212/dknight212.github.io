@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Exploring traffic flows in Power BI
-feature: 20 Areas/27 Blog/Final/2019-07-14-power-bi.png
-thumbnail: thumbnails/resized/00eb1642abe070244f5ee71157660b2c_86cf658e.webp
 ---
 (this is the original text except I've removed the link to the Power BI report)
 
@@ -12,7 +10,7 @@ This post introduces version 1 of the Power BI visual pack for traffic flows. I 
 
 First off - the pack is hosted on the public-facing Power BI site (link removed). Click on the link and you will see a page with a choice of survey and a map of survey locations.
 
-![Power BI](2019-07-14-power-bi.png)
+![Power BI](../assets/2019-07-14-power-bi.png)
 
 Choose a survey and the right-hand side of the first page will show the weather conditions and some summary charts for vehicle flows, mean speeds and 85th percentage speeds by hour.
   
