@@ -24,7 +24,7 @@ There are people out there that you see every day and you just don't know what t
 
 We could go further and perhaps imagine our entire town, city, county, country or continent from further above, and consider the hundreds of thousands or millions of people encompassed within that area, and similarly how they actually have issues which outweigh our own, and just perhaps how minuscule our own problems are in relation to those in total.
 
-![You and others from above](2026-02-02-you-above.png)
+![You and others from above](../assets/2026-02-02-you-above.png)
 
 And we can go out even further way out into space and look back at the Earth, whether you're thinking of the "pale blue dot"  (https://www.planetary.org/worlds/pale-blue-dot) and even further where the Earth is no longer visible. As Carl Sagan says, just how alone we are in the universe - this is all we have. This moment now is all we have. Some of what Sagan mentions I will return to in View from the Side, particularly these very Stoic feelings:
 
