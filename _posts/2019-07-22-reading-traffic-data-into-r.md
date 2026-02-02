@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Reading traffic data into R
-feature: 20 Areas/29 Projects/31 Blog posts/assets/2019-07-15-fig1.png
-thumbnail: thumbnails/resized/a1e05df6d019618c2b616c4e60ec9358_86cf658e.webp
+feature: 20 Areas/27 Blog/assets/2019-07-15-fig1.png
+thumbnail: thumbnails/resized/ea6a2d1dc76cac94b5fae6a1eba6227b_86cf658e.webp
 ---
  
 So you've got some traffic data, how do we get the data into a dataset so we can analyse it? Let's use the R language to explore the data.
@@ -21,7 +21,7 @@ What have we got and how do we want it? Let's start with thinking about how the 
 
 Let's look again at the Excel workbook.
 
-![Fig1](2019-07-15-fig1.png)
+![Fig1](../assets/2019-07-15-fig1.png)
 
 Each sheet with data has several rows before the actual data and the headings are over several lines. We would like the data in a tidy form with no blank rows and each column being named appropriately.
 
@@ -101,7 +101,7 @@ Some quick graphs
 barplot(excel_data_1$HourlyTotal, names.arg=excel_data_1$Time, main=paste("Northbound hourly flow", date), ylim=c(0,200))
 ```
 
-![Fig2](2019-07-22-fig2.png)
+![Fig2](../assets/2019-07-22-fig2.png)
 
 Let's compare the total northerly and southerly flows, and show the figures for cycling separately:
 
@@ -114,7 +114,7 @@ barplot(excel_data_1$Cycles, names.arg=excel_data_1$Time, main=paste("Northbound
 barplot(excel_data_2$Cycles, names.arg=excel_data_2$Time, main=paste("Southbound hourly cycles", date), ylim=c(0,50))
 ```
   
-![Fig3](2019-07-22-fig3.png)
+![Fig3](../assets/2019-07-22-fig3.png)
 
 ## Modularise the code
 
@@ -352,13 +352,13 @@ final_data2_15 <- convert_15min(final_data2)
 do_plots1("Northbound", "Southbound", final_data1_15, final_data2_15)
 ```
 
-![Fig4](2019-07-22-fig4.png)
+![Fig4](../assets/2019-07-22-fig4.png)
 
 ```r
 do_plots2("Northbound", "Southbound", final_data1, final_data2)
 ```
 
-![Fig5](2019-07-22-fig5.png)
+![Fig5](../assets/2019-07-22-fig5.png)
 
 ## Summary
 
