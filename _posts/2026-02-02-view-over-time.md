@@ -30,7 +30,7 @@ What is so unbearable about the present? Have you suffered worse in the past and
 
 The present moment is fleeting. As soon as you began reading this, that moment passed, and we entered a new 'now.' This concept is echoed in many Stoic and Buddhist teachings. By adopting this timeline perspective, we can delve into various Stoic ideas. For instance, consider 'memento mori', a reminder of mortality that Roman emperors received:
 
-![Obsidian graph view](2026-01-30-momento-mori.png)
+![Momento mori](2026-01-30-momento-mori.png)
 “For all things soon pass away and become a mere tale, and complete oblivion soon buries them.” - Marcus Aurelius
 
 Reflecting on the past, all individuals - whether famous or not, good or bad - are gone. Their time has ended. Countless people, relationships, and events have all turned to stardust. Looking ahead, the future holds numerous potential paths, both positive and negative. While we can predict some outcomes, many aspects of the future remain uncertain and highly improbable.
